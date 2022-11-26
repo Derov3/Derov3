@@ -1,0 +1,39 @@
+name: √√√√
+
+on:   
+  push: 
+  pull_request: 
+  schedule: 
+    - cron: '* */6 * * *' 
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go:
+          - |
+          - |
+          - |
+          - |
+        node:
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+          - |
+        python:
+          - |
+          - |
+          - |
+          - |
+    timeout-minutes: 355
+    steps:
+    - uses: actions/checkout@v1
+    - run: sleep 60
